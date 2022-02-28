@@ -1,0 +1,728 @@
+{
+	"info": {
+		"_postman_id": "62c29fd6-76fd-487f-b540-948b2430fb9b",
+		"name": "Banxico-No-Repudio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Flow",
+			"item": [
+				{
+					"name": "Save Flow",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"flowName\" : \"Flujo 1\",\r\n    \"flowDescription\" : \"Flujo de pruebas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Flow",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"flowName\" : \"Flujo 2\",\r\n    \"flowDescription\" : \"Flujo de pruebas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Flow",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow/:id",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Flow",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flow Step",
+			"item": [
+				{
+					"name": "Save Flow Step",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"Paso8\",\r\n    \"flowOrder\" : 5,\r\n    \"start\": \"0\",\r\n    \"end\" : \"1\",\r\n    \"server\" : {\r\n        \"ip\": \"127.0.0.1\"\r\n    },\r\n    \"flow\" : {\r\n        \"id\" : 2\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow/step",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow",
+								"step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Flow Step",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"Paso1\",\r\n    \"flowOrder\" : 1,\r\n    \"start\": \"0\",\r\n    \"end\" : \"1\",\r\n    \"server\" : {\r\n        \"ip\": \"127.0.0.1\"\r\n    },\r\n    \"flow\" : {\r\n        \"id\" : 1\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow/step",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow",
+								"step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Flow Step",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow/step/:id",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow",
+								"step",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "PS01",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Flow Step",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow/step",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow",
+								"step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Flow Step By flow",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/flow/step/byflow/:flow",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"flow",
+								"step",
+								"byflow",
+								":flow"
+							],
+							"variable": [
+								{
+									"key": "flow",
+									"value": "2",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server",
+			"item": [
+				{
+					"name": "Save Server",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ip\" : \"127.0.0.1\",\r\n    \"serverName\" : \"Servidor 1\",\r\n    \"path\" : \"C:\\\\Users\\\\plurt\\\\Pictures\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/server",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"server"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Server",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ip\" : \"127.0.0.1\",\r\n    \"serverName\" : \"Servidor 1\",\r\n    \"webSocketId\" : \"123456789\",\r\n    \"path\" : \"C:\\\\Users\\\\plurt\\\\Pictures\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/server",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"server"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Server",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/server/:ip",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"server",
+								":ip"
+							],
+							"variable": [
+								{
+									"key": "ip",
+									"value": "10.205.207.55",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Server",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/server",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"server"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fingerprint",
+			"item": [
+				{
+					"name": "Save Fingerprint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serverIP\": \"172.16.134.2\",\r\n    \"fingerPrint\" : \"da8e830ac3ef5adbf1f237dedb7b15035dc7d8ec\",\r\n    \"fileName\" : \"T0200726\",\r\n    \"step\" :{\r\n        \"id\" : \"PS01\"\r\n    },\r\n    \"statusFile\" : {\r\n        \"status\": \"Correcto\"\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/fingerprint",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"fingerprint"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate Fingerprint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serverIP\": \"127.0.02\",\r\n    \"fingerPrint\" : \"ca5e1812b4566c3488f23c6e709f005c4bdbc49e\",\r\n    \"step\" :{\r\n        \"id\" : \"Paso2\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/fingerprint/validate",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"fingerprint",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Email",
+			"item": [
+				{
+					"name": "Send Notification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fingerPrint\": \"da8e830ac3ef5adbf1f237dedb7b15035dc7d8ec\",\r\n    \"serverIP\" : \"172.16.134.2\",\r\n    \"fileName\" : \"T0200726\",\r\n    \"flowStepId\": \"PS03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlBnr}}/api/email",
+							"host": [
+								"{{baseUrlBnr}}"
+							],
+							"path": [
+								"api",
+								"email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"pm.globals.set(\"tokenBnr\", data.accessToken);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"SUPER_QA\",\r\n    \"password\" : \"qwerty12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrlBnr}}/login",
+					"host": [
+						"{{baseUrlBnr}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{tokenBnr}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
