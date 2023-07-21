@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=jars/jke.jar
+COPY ${JAR_FILE} jke.jar
+ENTRYPOINT ["java","-jar","/jke.jar"]

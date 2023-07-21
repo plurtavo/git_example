@@ -1,0 +1,30 @@
+{
+    "code": "00",
+    "errorWS": null,
+    "body": [
+        [
+            {
+                "nodeName": "MTVK",
+                "ip": "172.16.134.130",
+                "port": 2074,
+                "tracerNumber": 0,
+                "timeout": 30,
+                "echoDelay": 0,
+                "zpk": "0000000000000000",
+                "controller": "KeyExchangeManager",
+                "sslEnable": false
+            },
+            {
+                "nodeName": "P1C_GON_01",
+                "ip": "172.16.134.130",
+                "port": 2090,
+                "tracerNumber": 0,
+                "timeout": 30,
+                "echoDelay": 45,
+                "zpk": "D4D1317FC7353A92",
+                "controller": "ISOController",
+                "sslEnable": false
+            }
+        ]
+    ]
+}

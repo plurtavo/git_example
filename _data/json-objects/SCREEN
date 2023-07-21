@@ -1,0 +1,139 @@
+{
+    "code": "00",
+    "errorWS": null,
+    "body": [
+        [
+            {
+                "groupId": "T872_CNF_1",
+                "publicityName": "IntercamPublicidad",
+                "backGround": "IntercamFondo",
+                "buttonsStyle": "{\"style\":{\"color\":\"#000001\",\"backgroundColor\":\"transparent\",\"width\":\"90%\",\"height\":\"100px\",\"fontFamily\":\"Verdana\",\"borderRadius\":\"8px\",\"fontSize\":\"2.0rem\",\"border\":\"hidden,hidden,dashed,hidden 5px blue\",\"cursor\":\"Pointer\"},\"styleHover\":{\"color\":\"#000001\",\"backgroundColor\":\"transparent\",\"width\":\"90%\",\"height\":\"100px\",\"fontFamily\":\"Verdana\",\"borderRadius\":\"8px\",\"fontSize\":\"2.0rem\",\"border\":\"hidden,hidden,dashed,hidden 5px blue\",\"cursor\":\"Pointer\"},\"styleDisabled\":{\"color\":\"#000001\",\"backgroundColor\":\"transparent\",\"width\":\"90%\",\"height\":\"100px\",\"fontFamily\":\"Verdana\",\"borderRadius\":\"8px\",\"fontSize\":\"2.0rem\",\"border\":\"hidden,hidden,dashed,hidden 5px blue\",\"cursor\":\"Pointer\"}}",
+                "bodyStyle": "{\"fontFamily\":\"Arial\",\"color\":\"#000000\",\"size\":0}",
+                "buttonsAllowed": {
+                    "buttons": [
+                        {
+                            "id": 1,
+                            "bitmap": "10000000",
+                            "screenComponent": "AVISOCOMISIONTIEMPOAIRECOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 2,
+                            "bitmap": "11001100",
+                            "screenComponent": "COMPANIASCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 3,
+                            "bitmap": "11101110",
+                            "screenComponent": "MONTOTIEMPOAIRECOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 4,
+                            "bitmap": "10001000",
+                            "screenComponent": "NUMEROTELEFONOCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 5,
+                            "bitmap": "11000000",
+                            "screenComponent": "VERIFICARTIEMPOAIRECOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 6,
+                            "bitmap": "10001000",
+                            "screenComponent": "AVISOCOMISIONMOVIMIENTOSCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 7,
+                            "bitmap": "10001000",
+                            "screenComponent": "AVISOCOMISIONRETIROCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 8,
+                            "bitmap": "10001000",
+                            "screenComponent": "AVISOCOMISIONSALDOCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 9,
+                            "bitmap": "10001000",
+                            "screenComponent": "MOVIMIENTOSCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 10,
+                            "bitmap": "00000000",
+                            "screenComponent": "NIPCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 11,
+                            "bitmap": "11111111",
+                            "screenComponent": "RETIROOPTIONCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 12,
+                            "bitmap": "10001000",
+                            "screenComponent": "RETORNOMENUCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 13,
+                            "bitmap": "10001000",
+                            "screenComponent": "SALDOCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 14,
+                            "bitmap": "10001100",
+                            "screenComponent": "SELECTCONSULTAMOVIMIENTOSCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 15,
+                            "bitmap": "11100000",
+                            "screenComponent": "TIPOTARJETACOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 16,
+                            "bitmap": "10001000",
+                            "screenComponent": "CAMBIONIPCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 17,
+                            "bitmap": "11101000",
+                            "screenComponent": "SELECTOPERATION",
+                            "layout": null
+                        },
+                        {
+                            "id": 18,
+                            "bitmap": "10001000",
+                            "screenComponent": "TIMERMODULECOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 19,
+                            "bitmap": "10000000",
+                            "screenComponent": "INDEXCOMPONENT",
+                            "layout": null
+                        },
+                        {
+                            "id": 20,
+                            "bitmap": "00000000",
+                            "screenComponent": "REMESASCOMPONENT",
+                            "layout": null
+                        }
+                    ]
+                }
+            }
+        ]
+    ]
+}

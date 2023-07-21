@@ -1,0 +1,34 @@
+---
+operación: BAJA
+módulo: BINES
+metadata:
+  - bin: 491560
+    longitud del bin: 6
+    longitud del pan: 16
+    id institución: T139
+    descripción: Pruebas 1
+    id: 0 #Id generado por la creación
+  - bin: 491561
+    longitud del bin: 6
+    longitud del pan: 16
+    id institución: T139
+    descripción: Pruebas 2
+    id: 0 #Id generado por la creación
+  - bin: 491562
+    longitud del bin: 6
+    longitud del pan: 16
+    id institución: T139
+    descripción: Pruebas 3
+    id: 0 #Id generado por la creación
+  - bin: 491563
+    longitud del bin: 6
+    longitud del pan: 16
+    id institución: T139
+    descripción: Pruebas 4
+    id: 0 #Id generado por la creación
+  - bin: 491564
+    longitud del bin: 6
+    longitud del pan: 16
+    id institución: T139
+    descripción: Pruebas 5
+    id: 0 #Id generado por la creación

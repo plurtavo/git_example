@@ -1,0 +1,43 @@
+---
+operación: CAMBIO
+módulo: CAJEROS
+metadata:
+  - nemotécnico: ABCCAP04
+    ip: 172.72.72.31
+    id institución: T139
+    tipo de cajero: DIEBOLD
+    ubicación: VALERIO TRUJANO 508
+    código de municipio: 742
+    tipo de pantalla: TOUCH
+    nodo iso: ISO
+    nodo jke: JKE
+    paquete transaccional: BASICO
+    id de pantallas: T139_ATM_01
+    algoritmo dispensado: 1
+    licencia: 730300030
+  - nemotécnico: ABCCAP05
+    ip: 172.72.72.31
+    id institución: T139
+    tipo de cajero: DIEBOLD
+    ubicación: VALERIO TRUJANO 508
+    código de municipio: 742
+    tipo de pantalla: TOUCH
+    nodo iso: ISO
+    nodo jke: JKE
+    paquete transaccional: BASICO
+    id de pantallas: T139_ATM_01
+    algoritmo dispensado: 1
+    licencia: 730300030
+  - nemotécnico: ABCCAP06
+    ip: 172.72.72.31
+    id institución: T139
+    tipo de cajero: DIEBOLD
+    ubicación: VALERIO TRUJANO 508
+    código de municipio: 742
+    tipo de pantalla: TOUCH
+    nodo iso: ISO
+    nodo jke: JKE
+    paquete transaccional: BASICO
+    id de pantallas: T139_ATM_01
+    algoritmo dispensado: 1
+    licencia: 730300030

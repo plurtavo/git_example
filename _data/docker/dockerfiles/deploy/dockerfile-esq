@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=jars/esq.jar
+COPY ${JAR_FILE} esq.jar
+ENTRYPOINT ["java","-jar","/esq.jar"]

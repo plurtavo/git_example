@@ -1,0 +1,280 @@
+{
+    "code": "00",
+    "errorWS": null,
+    "body": [
+        [
+            {
+                "binId": {
+                    "bin": "558322",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B136"
+            },
+            {
+                "binId": {
+                    "bin": "044",
+                    "panLen": 10,
+                    "binLen": 3
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "00310",
+                    "panLen": 10,
+                    "binLen": 5
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "477260",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "491871",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "491872",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "527920",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "531444",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "540958",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "544204",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "545375",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "547407",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "550454",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "552263",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "557920",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "557921",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "557922",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "557923",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "557924",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "601999",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "603681",
+                    "panLen": 16,
+                    "binLen": 6
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "55792250",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "58877202",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "58877261",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "58877266",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "58877267",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "58877268",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "58877271",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "58877272",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "60368101",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "60368102",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "60368103",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "60368105",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            },
+            {
+                "binId": {
+                    "bin": "60368106",
+                    "panLen": 16,
+                    "binLen": 8
+                },
+                "fiid": "B044"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,24 @@
+---
+operación: ALTA
+módulo: INSTITUCIONES
+metadata:
+  - id institución: B000
+    código adquiriente: '00012'
+    nombre del banco: Gonet Cloud
+    razón social: Gonet Cloud APPS
+  - id institución: B001
+    código adquiriente: '00013'
+    nombre del banco: Gonet Cloud
+    razón social: Gonet Cloud APPS
+    código pais: 484
+    red lógica: PRO1
+  - id institución: B002
+    código adquiriente: '00014'
+    nombre del banco: Gonet Cloud
+    razón social: Gonet Cloud APPS
+    código pais: 484
+  - id institución: B003
+    código adquiriente: '00015'
+    nombre del banco: Gonet Cloud
+    razón social: Gonet Cloud APPS
+    código pais: 484

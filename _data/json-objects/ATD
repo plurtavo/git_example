@@ -1,0 +1,337 @@
+{
+    "code": "00",
+    "errorWS": null,
+    "body": [
+        [
+            {
+                "terminalId": "GRGN0001",
+                "sequenceNumber": 69,
+                "sequence": "354574507",
+                "deviceType": "22",
+                "postingDay": "2020-05-18",
+                "online": true,
+                "idf": {
+                    "fiid": "T872",
+                    "logicalNet": null,
+                    "name": "Intercam Banco S.A.",
+                    "acquiringId": null,
+                    "nameLong": null,
+                    "currentBusinessDay": null,
+                    "nextBusinessDay": null,
+                    "forcedCutOver": null,
+                    "agreement": null,
+                    "country": null,
+                    "surcharges": null,
+                    "apcs": null,
+                    "images": null,
+                    "screens": null,
+                    "bins": null,
+                    "rcpt": null,
+                    "styles": null
+                },
+                "county": {
+                    "countyCodeId": 183,
+                    "countyCode": "016",
+                    "countyName": "MIGUEL HIDALG",
+                    "state": {
+                        "stateCode": "09",
+                        "stateName": "CIUDAD DE MEXICO",
+                        "stateShortName": "DIF",
+                        "zone": "America/Mexico_City"
+                    }
+                },
+                "ip": "10.255.21.41",
+                "lastTrx": null,
+                "activeTrx": false,
+                "location": "Lab Prosa Intercam",
+                "receipt": null,
+                "screenType": "TOUCH",
+                "screenGroup": {
+                    "groupId": "T872_CNF_1",
+                    "publicityName": "IntercamPublicidad",
+                    "backGround": "IntercamFondo",
+                    "buttonsStyle": "{\"style\":{\"color\":\"#000001\",\"backgroundColor\":\"transparent\",\"width\":\"90%\",\"height\":\"100px\",\"fontFamily\":\"Verdana\",\"borderRadius\":\"8px\",\"fontSize\":\"2.0rem\",\"border\":\"hidden,hidden,dashed,hidden 5px blue\",\"cursor\":\"Pointer\"},\"styleHover\":{\"color\":\"#000001\",\"backgroundColor\":\"transparent\",\"width\":\"90%\",\"height\":\"100px\",\"fontFamily\":\"Verdana\",\"borderRadius\":\"8px\",\"fontSize\":\"2.0rem\",\"border\":\"hidden,hidden,dashed,hidden 5px blue\",\"cursor\":\"Pointer\"},\"styleDisabled\":{\"color\":\"#000001\",\"backgroundColor\":\"transparent\",\"width\":\"90%\",\"height\":\"100px\",\"fontFamily\":\"Verdana\",\"borderRadius\":\"8px\",\"fontSize\":\"2.0rem\",\"border\":\"hidden,hidden,dashed,hidden 5px blue\",\"cursor\":\"Pointer\"}}",
+                    "bodyStyle": "{\"fontFamily\":\"Arial\",\"color\":\"#000000\",\"size\":0}",
+                    "buttonsAllowed": {
+                        "buttons": [
+                            {
+                                "id": 1,
+                                "bitmap": "10000000",
+                                "screenComponent": "AVISOCOMISIONTIEMPOAIRECOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 2,
+                                "bitmap": "11001100",
+                                "screenComponent": "COMPANIASCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 3,
+                                "bitmap": "11101110",
+                                "screenComponent": "MONTOTIEMPOAIRECOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 4,
+                                "bitmap": "10001000",
+                                "screenComponent": "NUMEROTELEFONOCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 5,
+                                "bitmap": "11000000",
+                                "screenComponent": "VERIFICARTIEMPOAIRECOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 6,
+                                "bitmap": "10001000",
+                                "screenComponent": "AVISOCOMISIONMOVIMIENTOSCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 7,
+                                "bitmap": "10001000",
+                                "screenComponent": "AVISOCOMISIONRETIROCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 8,
+                                "bitmap": "10001000",
+                                "screenComponent": "AVISOCOMISIONSALDOCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 9,
+                                "bitmap": "10001000",
+                                "screenComponent": "MOVIMIENTOSCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 10,
+                                "bitmap": "00000000",
+                                "screenComponent": "NIPCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 11,
+                                "bitmap": "11111111",
+                                "screenComponent": "RETIROOPTIONCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 12,
+                                "bitmap": "10001000",
+                                "screenComponent": "RETORNOMENUCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 13,
+                                "bitmap": "10001000",
+                                "screenComponent": "SALDOCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 14,
+                                "bitmap": "10001100",
+                                "screenComponent": "SELECTCONSULTAMOVIMIENTOSCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 15,
+                                "bitmap": "11100000",
+                                "screenComponent": "TIPOTARJETACOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 16,
+                                "bitmap": "10001000",
+                                "screenComponent": "CAMBIONIPCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 17,
+                                "bitmap": "11101000",
+                                "screenComponent": "SELECTOPERATION",
+                                "layout": null
+                            },
+                            {
+                                "id": 18,
+                                "bitmap": "10001000",
+                                "screenComponent": "TIMERMODULECOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 19,
+                                "bitmap": "10000000",
+                                "screenComponent": "INDEXCOMPONENT",
+                                "layout": null
+                            },
+                            {
+                                "id": 20,
+                                "bitmap": "00000000",
+                                "screenComponent": "REMESASCOMPONENT",
+                                "layout": null
+                            }
+                        ]
+                    }
+                },
+                "node": {
+                    "nodeName": "P1C_GON_01",
+                    "ip": "172.16.134.130",
+                    "port": 2090,
+                    "tracerNumber": 0,
+                    "timeout": 30,
+                    "echoDelay": 45,
+                    "zpk": "D4D1317FC7353A92",
+                    "controller": "ISOController",
+                    "sslEnable": false
+                },
+                "nodeX": {
+                    "nodeName": "MTVK",
+                    "ip": "172.16.134.130",
+                    "port": 2074,
+                    "tracerNumber": 0,
+                    "timeout": 30,
+                    "echoDelay": 0,
+                    "zpk": "0000000000000000",
+                    "controller": "KeyExchangeManager",
+                    "sslEnable": false
+                },
+                "terminalDevices": {
+                    "dispenser": {
+                        "status": 0,
+                        "cassettes": [
+                            {
+                                "cassetteIndex": 1,
+                                "currency": "   ",
+                                "denomination": 0,
+                                "initialCount": 0,
+                                "decrement": 0,
+                                "current": 0,
+                                "dispensed": 0,
+                                "deposited": 0,
+                                "rejected": 0,
+                                "retracted": 0,
+                                "presented": 0,
+                                "status": "OK",
+                                "type": "RETRACTCASSETTE"
+                            },
+                            {
+                                "cassetteIndex": 2,
+                                "currency": "MXN",
+                                "denomination": 50,
+                                "initialCount": 111,
+                                "decrement": 0,
+                                "current": 91,
+                                "dispensed": 20,
+                                "deposited": 0,
+                                "rejected": 0,
+                                "retracted": 0,
+                                "presented": 20,
+                                "status": "OK",
+                                "type": "BILLCASSETTE"
+                            },
+                            {
+                                "cassetteIndex": 3,
+                                "currency": "MXN",
+                                "denomination": 100,
+                                "initialCount": 222,
+                                "decrement": 0,
+                                "current": 212,
+                                "dispensed": 10,
+                                "deposited": 0,
+                                "rejected": 0,
+                                "retracted": 0,
+                                "presented": 10,
+                                "status": "OK",
+                                "type": "BILLCASSETTE"
+                            },
+                            {
+                                "cassetteIndex": 4,
+                                "currency": "MXN",
+                                "denomination": 200,
+                                "initialCount": 333,
+                                "decrement": 0,
+                                "current": 333,
+                                "dispensed": 0,
+                                "deposited": 0,
+                                "rejected": 0,
+                                "retracted": 0,
+                                "presented": 0,
+                                "status": "OK",
+                                "type": "BILLCASSETTE"
+                            },
+                            {
+                                "cassetteIndex": 5,
+                                "currency": "MXN",
+                                "denomination": 500,
+                                "initialCount": 444,
+                                "decrement": 0,
+                                "current": 444,
+                                "dispensed": 0,
+                                "deposited": 0,
+                                "rejected": 0,
+                                "retracted": 0,
+                                "presented": 0,
+                                "status": "OK",
+                                "type": "BILLCASSETTE"
+                            }
+                        ],
+                        "deviceState": "OFFLINE",
+                        "error": "NA",
+                        "dispenserStatus": "NA",
+                        "shutter": "UNKNOWN"
+                    },
+                    "printer": {
+                        "status": 0,
+                        "paper": "OUT",
+                        "toner": "UNKNOWN",
+                        "deviceState": "OFFLINE",
+                        "error": "NA",
+                        "supply": "NA"
+                    },
+                    "cardReader": {
+                        "status": 0,
+                        "fraudModule": "UNKNOWN",
+                        "chipModule": "UNKNOWN",
+                        "error": "NA",
+                        "retainBin": "NA",
+                        "deviceState": "OFFLINE"
+                    },
+                    "pinPad": {
+                        "status": 0,
+                        "fraudModule": "WFS_PIN_AFMUNKNOWN",
+                        "devicePosition": "NA",
+                        "deviceState": "NA",
+                        "encStat": "NA",
+                        "error": "NA"
+                    },
+                    "siu": {
+                        "status": 0,
+                        "cabinetDoor": "NOT_AVAILABLE",
+                        "safeDoor": "NOT_AVAILABLE",
+                        "mode": "MAINTENANCE",
+                        "deviceState": "NA",
+                        "error": "NA"
+                    },
+                    "cashInModule": null,
+                    "barCodeReader": null,
+                    "camera": null,
+                    "depository": null,
+                    "coinDispenser": null,
+                    "checkReader": null,
+                    "diagnostic": null,
+                    "alarm": null,
+                    "embossingCard": null,
+                    "cardDispenser": null,
+                    "itemProcessing": null,
+                    "textTerminalUnit": null
+                },
+                "journal": [],
+                "upTimes": []
+            }
+        ]
+    ]
+}

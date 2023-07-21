@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=nabhi-backend/_data/docker/dockerfiles/deploy/jars/dash.jar
+COPY ${JAR_FILE} dash.jar
+ENTRYPOINT ["java","-jar","/dash.jar"]

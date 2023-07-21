@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=nabhi-backend/_data/docker/dockerfiles/deploy/jars/iso.jar
+COPY ${JAR_FILE} iso.jar
+ENTRYPOINT ["java","-jar","/iso.jar"]

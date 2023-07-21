@@ -1,0 +1,40 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /acv
+spring:
+  profiles:
+    active: "@spring.profiles.active@"
+  datasource:
+    #url: jdbc:oracle:thin:@localhost:1521:gonetdev
+    username: CAN
+    password: CAN
+    hikari:
+      pool-name: CAN-POOL
+      maximum-pool-size: 5
+  jpa:
+    open-in-view: true
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: true
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+signer: Nabhi
+nabhi:
+  app: ACV
+  websocket:
+    token:
+      secret: Vz2X4XcNUd2JXG5K
+      expiration: 3600
+  uptime:
+    remove:
+      log: false
+    batch:
+      cron: 59 59 23 * * *
+  files:
+    storage:
+      directory: /var/files/atm

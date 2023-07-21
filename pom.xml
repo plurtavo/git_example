@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>mx.com.prosa.nabhi</groupId>
+    <artifactId>nabhi-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>nabhi</name>
+    <url>https://www.prosamexico.mx/</url>
+    <description>Parent pom that provides dependency and complement management for multivendor cloud microservices
+    </description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <main.basedir>${project.basedir}</main.basedir>
+        <nabhi.misc.version>1.0.0</nabhi.misc.version>
+        <!--Cambio release/monitoreo-->
+        <dsapi.socket.version>1.0.2</dsapi.socket.version>
+        <!--Cambio release/monitoreo-->
+        <tech.jii.version>1.0.2</tech.jii.version>
+        <spirng.ldap.data.version>2.3.2.RELEASE</spirng.ldap.data.version>
+        <spring.security.web>5.1.6.RELEASE</spring.security.web>
+        <spring.security.config>5.1.6.RELEASE</spring.security.config>
+        <json.web.token.version>0.7.0</json.web.token.version>
+        <google.gson.version>2.8.6</google.gson.version>
+        <spring.fox.swagger>2.8.0</spring.fox.swagger>
+        <model.mapper.version>2.3.6</model.mapper.version>
+        <jackson.mapper.version>1.9.13</jackson.mapper.version>
+        <jackson.yaml.version>2.9.9</jackson.yaml.version>
+        <oracle.driver.version>19.3.0.0</oracle.driver.version>
+        <hibernate.types>2.9.7</hibernate.types>
+        <spring.security.message>5.1.6.RELEASE</spring.security.message>
+        <apache.poi.poi.version>5.0.0</apache.poi.poi.version>
+        <apache.poi.poi-ooxml.version>5.0.0</apache.poi.poi-ooxml.version>
+        <commons.net.version>3.6</commons.net.version>
+        <!--Cambio release/monitoreo-->
+        <spring.admin.version>2.1.6</spring.admin.version>
+        <!--Cambio release/monitoreo-->
+
+        <sonar.exclusions>
+            src/main/java/us/gonet/nabhi/misc/model/devices/**/*, <!--Paquete de modelos que no se ocuparan el futuro y marca duplicados-->
+            src/main/java/mx/com/prosa/nabhi/misc/domain/**/*, <!--Paquete de modelos DAO que marca duplicados por los DTO-->
+            src/main/java/mx/com/prosa/nabhi/misc/model/**/*, <!--Paquete de modelos DTO que marca duplicados por los DAO-->
+            src/main/java/mx/com/prosa/nabhi/dash/controller/**/*, <!--Paquete de controladores que marca duplicado aun cuando tiene diferente lógica, no se puede reestructurar-->
+            src/main/java/mx/com/prosa/nabhi/dash/core/receipt/ReceiptTest.java, <!--Clase que marca duplicado aunque sean diferentes proyectos-->
+            src/main/java/mx/com/prosa/nabhi/iso/controller/SocketClientControllerImp.java, <!--Clase que marca duplicado aunque sean diferentes proyectos ISO-JkE-->
+            src/main/java/mx/com/prosa/nabhi/iso/core/sockets/NodeISOBuilder.java, <!--Clase que marca duplicado aunque sean diferentes proyectos ISO-JkE-->
+            src/main/java/mx/com/prosa/nabhi/iso/business/impl/SocketServices.java, <!--Clase que marca duplicado aunque sean diferentes proyectos ISO-JkE-->
+            src/main/java/mx/com/prosa/nabhi/acv/security/**/*, <!--Paquete de seguridad que marca duplicado aun cuando tiene diferente lógica y pertenece a proyectos diferentes-->
+            src/main/java/mx/com/prosa/nabhi/dash/security/**/*,<!--Paquete de seguridad que marca duplicado aun cuando tiene diferente lógica y pertenece a proyectos diferentes-->
+            src/main/java/mx/com/prosa/nabhi/jse/security/**/*, <!--Paquete de seguridad que marca duplicado aun cuando tiene diferente lógica y pertenece a proyectos diferentes-->
+            src/main/java/mx/com/prosa/nabhi/jse/controller/TransactionalController.java, <!--Controlador que marca duplicado con falso positivo-->
+            src/main/java/mx/com/prosa/nabhi/acv/config/SwaggerConfig.java, <!--Configuración de Swagger con falso positivo duplicado-->
+            src/main/java/mx/com/prosa/nabhi/dash/config/SwaggerConfig.java, <!--Configuración de Swagger con falso positivo duplicado-->
+            src/main/java/mx/com/prosa/nabhi/iso/config/SwaggerConfig.java, <!--Configuración de Swagger con falso positivo duplicado-->
+            src/main/java/mx/com/prosa/nabhi/jke/config/SwaggerConfig.java, <!--Configuración de Swagger con falso positivo duplicado-->
+            src/main/java/mx/com/prosa/nabhi/jse/config/SwaggerConfig.java, <!--Configuración de Swagger con falso positivo duplicado-->
+            src/main/java/mx/com/prosa/nabhi/esq/socket/MessageHandler.java <!--Clase que marca duplicado aunque sean diferentes proyectos JkE-ESQ-->
+        </sonar.exclusions>
+    </properties>
+
+
+    <modules>
+        <module>nabhi-misc</module>
+        <module>nabhi-iso</module>
+        <module>nabhi-jke</module>
+        <module>nabhi-dash</module>
+        <module>nabhi-jse</module>
+        <module>nabhi-esq</module>
+        <!--Cambio release/monitoreoatm-->
+        <module>nabhi-acv</module>
+        <!--Cambio release/monitoreoatm-->
+    </modules>
+
+    <profiles>
+
+        <profile>
+            <id>dev</id>
+            <properties>
+                <packaging.type>jar</packaging.type>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>dq</id>
+            <properties>
+                <packaging.type>jar</packaging.type>
+                <spring.profiles.active>dq</spring.profiles.active>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>dqa</id>
+            <properties>
+                <packaging.type>jar</packaging.type>
+                <spring.profiles.active>dq</spring.profiles.active>
+            </properties>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
+                            <configuration>
+                                <layout>ZIP</layout>
+                                <outputDirectory>${maven.multiModuleProjectDirectory}/_data/docker/dockerfiles/deploy/jars</outputDirectory>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>repackage</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+                <packaging.type>war</packaging.type>
+                <spring.profiles.active>prod</spring.profiles.active>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>${oracle.driver.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vladmihalcea</groupId>
+            <artifactId>hibernate-types-52</artifactId>
+            <version>${hibernate.types}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${spring.fox.swagger}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${spring.fox.swagger}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
+            <version>${spring.fox.swagger}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson.mapper.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>${model.mapper.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${google.gson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>tech.zipe</groupId>
+            <artifactId>JII-8583</artifactId>
+            <version>${tech.jii.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${json.web.token.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>${jackson.yaml.version}</version>
+        </dependency>
+
+        <!--Cambio release/monitoreo-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring.admin.version}</version>
+        </dependency>
+        <!--Cambio release/monitoreo-->
+    </dependencies>
+
+    <build>
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+            <plugins>
+                <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <configuration>
+                        <source>8</source>
+                        <target>8</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                </plugin>
+                <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.7.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources/jks</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+</project>

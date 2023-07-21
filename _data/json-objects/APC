@@ -1,0 +1,125 @@
+{
+    "code": "00",
+    "errorWS": null,
+    "body": [
+        [
+            {
+                "apcId": {
+                    "tranCode": "01",
+                    "formAcct": "00",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "01",
+                    "formAcct": "10",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "01",
+                    "formAcct": "20",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "01",
+                    "formAcct": "30",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "31",
+                    "formAcct": "00",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "31",
+                    "formAcct": "10",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "31",
+                    "formAcct": "20",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "31",
+                    "formAcct": "30",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            },
+            {
+                "apcId": {
+                    "tranCode": "96",
+                    "formAcct": "00",
+                    "toAcct": "00",
+                    "fiid": "T872"
+                },
+                "routingGroup": "00000000872",
+                "sharingGroup": "APC                     ",
+                "allowedCode": {
+                    "allowedCode": "4"
+                }
+            }
+        ]
+    ]
+}

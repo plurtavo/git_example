@@ -1,0 +1,24 @@
+{
+    "code": "00",
+    "errorWS": null,
+    "body": [
+        [
+            {
+                "countryCode": "484",
+                "alpha2": "MX",
+                "alpha3": "MXN",
+                "name": "MEXICO",
+                "symbols": "$",
+                "states": null
+            },
+            {
+                "countryCode": "840",
+                "alpha2": "US",
+                "alpha3": "USD",
+                "name": "UNITED STATES",
+                "symbols": "$",
+                "states": null
+            }
+        ]
+    ]
+}

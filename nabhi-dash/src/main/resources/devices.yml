@@ -1,0 +1,131 @@
+---
+dispenser:
+  status: 1
+  cassettes:
+  - cassetteIndex: 1
+    currency: "   "
+    denomination: 0
+    type: RETRACTCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 0
+      decrement: 0
+      current: 0
+      dispensed: 0
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 0
+      status: OK
+  - cassetteIndex: 2
+    currency: MXN
+    denomination: 50
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 0
+      decrement: 0
+      current: 0
+      dispensed: 0
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 0
+      status: OK
+  - cassetteIndex: 3
+    currency: MXN
+    denomination: 100
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 0
+      decrement: 0
+      current: 0
+      dispensed: 10
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 0
+      status: OK
+  - cassetteIndex: 4
+    currency: MXN
+    denomination: 200
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 0
+      decrement: 0
+      current: 0
+      dispensed: 0
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 0
+      status: OK
+  - cassetteIndex: 5
+    currency: MXN
+    denomination: 500
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 0
+      decrement: 0
+      current: 0
+      dispensed: 0
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 0
+      status: OK
+  deviceState: HWERROR
+  error: NA
+  dispenserStatus: NA
+  shutter: NOTSUPPORTED
+printer:
+  status: 1
+  paper: UNKNOWN
+  toner: UNKNOWN
+  deviceState: HWERROR
+  error: NA
+  supply: NA
+cardReader:
+  status: 1
+  fraudModule: UNKNOWN
+  chipModule: NOTSUPP
+  error: NA
+  retainBin: NA
+  deviceState: HWERROR
+pinPad:
+  status: 1
+  fraudModule: WFS_PIN_AFMUNKNOWN
+  devicePosition: NA
+  deviceState: NA
+  encStat: NA
+  error: NA
+siu:
+  status: 1
+  cabinetDoor: NOT_AVAILABLE
+  safeDoor: NOT_AVAILABLE
+  mode: MAINTENANCE
+  deviceState: NA
+  error: NA

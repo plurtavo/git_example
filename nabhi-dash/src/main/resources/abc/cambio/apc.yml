@@ -1,0 +1,20 @@
+---
+operación: CAMBIO
+módulo: APC
+metadata:
+  - código de transacción: 01
+    id institución: T139
+    tipo cuenta origen: 10
+    tipo cuenta destino: 00
+    grupo de enrutamiento adquiriente: 00000000001
+    grupo de compartimiento adquiriente: 00000000001
+    nivel de autorización: 4
+    id: 0 #Id generado por la creación
+  - código de transacción: 01
+    id institución: T139
+    tipo cuenta origen: 20
+    tipo cuenta destino: 00
+    grupo de enrutamiento adquiriente: 00000000001
+    grupo de compartimiento adquiriente: 00000000001
+    nivel de autorización: 4
+    id: 0 #Id generado por la creación

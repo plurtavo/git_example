@@ -1,0 +1,10 @@
+FROM maven:3.8.1-adoptopenjdk-8 as build
+WORKDIR /nabhi-backend
+COPY . .
+WORKDIR /nabhi-backend
+RUN mvn -am -pl nabhi-esq install -DskipTests=true -Pdq
+
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=/nabhi-backend/nabhi-esq/target/esq.jar
+COPY --from=build ${JAR_FILE} esq.jar
+ENTRYPOINT ["java","-jar","/esq.jar"]

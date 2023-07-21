@@ -1,0 +1,10 @@
+FROM maven:3.8.1-adoptopenjdk-8 as build
+WORKDIR /nabhi-backend
+COPY . .
+WORKDIR /nabhi-backend
+RUN mvn -am -pl nabhi-dash install -DskipTests=true -Pdq
+
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=/nabhi-backend/nabhi-dash/target/dash.jar
+COPY --from=build ${JAR_FILE} dash.jar
+ENTRYPOINT ["java","-jar","/dash.jar"]

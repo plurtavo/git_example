@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration echoStatus="WARN" monitorInterval="30">
+
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} [%15.15t] %-40.40c{1.} : %m%n%ex
+            <!--   [%d{dd-MM-yy hh:mm:ss:sss}] [%5p] %c{2}: %m%n-->
+        </Property>
+        <Property name="LOG_PATTERN_SPLUK">
+            %d{yyyy-MM-dd HH:mm:ss} ${hostName} %m%n%ex
+        </Property>
+
+    </Properties>
+
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <!-- <PatternLayout pattern="${LOG_PATTERN}"/> -->
+            <!--<PatternLayout disableAnsi="false"  pattern="%highlight{%d{HH:mm:ss.SSS} %-5level %logger{36}.%M() @%L - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
+            -->
+            <PatternLayout disableAnsi="false"
+                           pattern="%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}} %highlight{${LOG_LEVEL_PATTERN:-%5p}}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue} %style{${sys:PID}}{magenta} [%15.15t] %style{%-40.40C{1.}}{cyan} %M:  %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
+
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="mx.com.prosa.nabhi.iso" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="com.dsapi.core.sockets" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="com.zaxxer.hikari.HikariConfig" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+
+        </Root>
+    </Loggers>
+
+</Configuration>

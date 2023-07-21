@@ -1,0 +1,103 @@
+---
+status: 1
+cassettes:
+  - cassetteIndex: 1
+    currency: "CVC"
+    denomination: 0
+    type: RETRACTCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 0
+      decrement: 0
+      current: 0
+      dispensed: 0
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 0
+      status: OK
+  - cassetteIndex: 2
+    currency: "MXN"
+    denomination: 50
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 100
+      decrement: 0
+      current: 100
+      dispensed: 20
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 10
+      status: OK
+  - cassetteIndex: 3
+    currency: "MXN"
+    denomination: 200
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 100
+      decrement: 0
+      current: 100
+      dispensed: 20
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 10
+      status: OK
+  - cassetteIndex: 4
+    currency: "MXN"
+    denomination: 200
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 100
+      decrement: 0
+      current: 100
+      dispensed: 20
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 10
+      status: OK
+  - cassetteIndex: 5
+    currency: "MXN"
+    denomination: 500
+    type: BILLCASSETTE
+    logical:
+      increment: 0
+      totalDispensed: 0
+      initialDayCount: 0
+      endDayCount: 0
+    physical:
+      initialCount: 100
+      decrement: 0
+      current: 100
+      dispensed: 20
+      deposited: 0
+      rejected: 0
+      retracted: 0
+      presented: 10
+      status: OK
+
+deviceState: ''
+error: ''
+dispenserStatus: ''
+shutter: ''

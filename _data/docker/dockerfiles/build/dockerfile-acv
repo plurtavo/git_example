@@ -1,0 +1,10 @@
+FROM maven:3.8.1-adoptopenjdk-8 as build
+WORKDIR /nabhi-backend
+COPY . .
+WORKDIR /nabhi-backend
+RUN mvn -am -pl nabhi-acv install -DskipTests=true -Pdq
+
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=/nabhi-backend/nabhi-acv/target/acv.jar
+COPY --from=build ${JAR_FILE} acv.jar
+ENTRYPOINT ["java","-jar","/acv.jar"]

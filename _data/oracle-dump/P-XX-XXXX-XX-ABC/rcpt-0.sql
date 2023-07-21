@@ -1,0 +1,2 @@
+SELECT 'ALTER TABLE TBL_RCPT DROP CONSTRAINT ' || CONSTRAINT_NAME || ';'
+FROM user_constraints WHERE table_name = 'TBL_RCPT' AND index_name = 'PK_FIID_TRAN_CUSTOMER'

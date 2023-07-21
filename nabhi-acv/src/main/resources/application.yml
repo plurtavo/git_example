@@ -1,0 +1,38 @@
+server:
+  servlet:
+    context-path: /acv
+spring:
+  profiles:
+    active: "@spring.profiles.active@"
+  datasource:
+    url: jdbc:oracle:thin:@${OPENSHIFT_NABHI_ATM_JDB_DB_HOST}:${OPENSHIFT_NABHI_ATM_JDB_DB_PORT}:${OPENSHIFT_NABHI_ATM_JDB_DB_INSTANCE}
+    username: ${OPENSHIFT_NABHI_ATM_JDB_DB_USERNAME}
+    password: ${OPENSHIFT_NABHI_ATM_JDB_DB_PASSWORD}
+    hikari:
+      pool-name: ${OPENSHIFT_NABHI_ATM_JDB_POOLNAME}
+      maximum-pool-size: ${OPENSHIFT_NABHI_ATM_JDB_POOLSIZE}
+  jpa:
+    open-in-view: true
+    hibernate:
+      use-new-id-generator-mappings: true
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+signer: Nabhi
+nabhi:
+  app: ACV
+  websocket:
+    token:
+      secret: ${OPENSHIFT_NABHI_PRIKEY}
+      expiration: 15552000
+  uptime:
+    remove:
+      log: ${OPENSHIFT_NABHI_ATM_ACV_UPTIME_REMOVE_LOG}
+    batch:
+      cron: ${OPENSHIFT_NABHI_ATM_ACV_UPTIME_BATCH_CRON}
+  files:
+    storage:
+      directory: ${OPENSHIFT_NABHI_ATM_ACV_FILES_STORAGE_DIRECTORY}

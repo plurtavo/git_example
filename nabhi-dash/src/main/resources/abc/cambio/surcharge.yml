@@ -1,0 +1,12 @@
+---
+operación: CAMBIO
+módulo: COMISIONES
+metadata:
+  - código de transacción: 01
+    id institución adquiriente: T139
+    id institución emisor: "****"
+    monto comisión: 30.23
+  - código de transacción: 30
+    id institución adquiriente: T139
+    id institución emisor: "****"
+    monto comisión: 30.23

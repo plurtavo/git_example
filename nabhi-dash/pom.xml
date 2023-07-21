@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>mx.com.prosa.nabhi</groupId>
+        <artifactId>nabhi-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>nabhi-dash</artifactId>
+    <name>nabhi-dash</name>
+    <description>BackEnd From Dash Nabhi</description>
+
+    <packaging>${packaging.type}</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>mx.com.prosa.nabhi</groupId>
+            <artifactId>nabhi-misc</artifactId>
+            <version>${nabhi.misc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-ldap</artifactId>
+            <version>${spirng.ldap.data.version}</version>
+        </dependency>
+        <!--Cambio release/monitoreoatm-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${apache.poi.poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${apache.poi.poi-ooxml.version}</version>
+        </dependency>
+        <!--Cambio release/monitoreoatm-->
+        <!--Cambio release/redcat-->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>${commons.net.version}</version>
+        </dependency>
+        <!--Cambio release/redcat-->
+
+    </dependencies>
+
+    <build>
+        <finalName>dash</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>mx.com.prosa.nabhi.dash.DashApplication</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.7.201606060606</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+</project>

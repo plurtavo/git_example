@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+ARG JAR_FILE=nabhi-backend/_data/docker/dockerfiles/deploy/jars/acv.jar
+COPY ${JAR_FILE} acv.jar
+ENTRYPOINT ["java","-jar","/acv.jar"]
